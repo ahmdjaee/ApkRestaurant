@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMakanan">
+
+    <fragment
+        android:id="@+id/fragmentMakanan"
+        android:name="com.example.apkrestaurant.FragmentMakanan"
+        android:label="fragment_makanan"
+        tools:layout="@layout/fragment_makanan" >
+        <action
+            android:id="@+id/action_fragmentMakanan_to_fragmentDetail"
+            app:destination="@id/fragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMinuman"
+        android:name="com.example.apkrestaurant.FragmentMinuman"
+        android:label="fragment_minuman"
+        tools:layout="@layout/fragment_minuman" />
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.example.apkrestaurant.FragmentDetail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/fragmentPesanan"
+        android:name="com.example.apkrestaurant.FragmentPesanan"
+        android:label="fragment_pesanan"
+        tools:layout="@layout/fragment_pesanan" />
+    <fragment
+        android:id="@+id/fragmentUser"
+        android:name="com.example.apkrestaurant.FragmentUser"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+</navigation>
